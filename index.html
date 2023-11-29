@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imagex/png" href="img/logoZippy.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Zippy | Bem vindo</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header" class="">
+        <div id="logo" class="logo">
+            <img src="img/logoZippy.png" alt="">
+            <p>Zippy</p>
+        </div>
+        <nav id="nav">
+            <ul id="ul" class="">
+                <li><a href="#comoFunciona">Como Funciona</a></li>
+                <li><a href="#quemSomos">Quem Somos</a></li>
+                <li><a id="btn-download" href="#">Baixe o App</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+            </ul>
+        </nav>
+        <div id="btn-hamburguer" class="btn-hamburguer" onclick="navResponsive()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container">
+        <div class="texto">
+            <h1>Compre de qualquer lugar <br> do MUNDO
+                com poucos CLIQUES </h1>
+            <p id="textoOpaco">Zippy conecta compradores e viajantes ao redor do mundo afim de conseguir
+                os melhores preços e prazos</p>
+            <a class="btn-index" href="#comoFunciona">Veja como funciona</a>
+        </div>
+
+        <div class="imagem">
+            <img class="move-img" src="img/aviao-main.png" alt="aviao">
+        </div>
+    </div>
+
+    <!-- SECTION - PEDIDOS -->
+    <section id="pedidos">
+        <div id="textoPedidos">
+            <h2>Alguns dos pedidos feitos com a gente</h2>
+            <p id="textoOpaco">Com essas compras eles garatiram rapidez, economia e segurança</p>
+        </div>
+
+        <div class="cards">
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/airPods.png" alt="">
+                <div class="info-cliente">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente01.png" alt="" class="foto-perfil">
+                        <p class="nome-remetente">Alek</p>
+                        <p class="local">New York - USA</p>
+                        <a href="#" class="btn-card">Ganhou R$ 100</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt="">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente02.png" alt="" class="foto-perfil2">
+                        <p class="nome-remetente">Luiz</p>
+                        <p class="local">Brazil - BR</p>
+                        <a href="#" class="btn-card">Economizou R$ 150</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/iphone.png" alt="">
+                <div class="info-cliente">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente01.png" alt="" class="foto-perfil">
+                        <p class="nome-remetente">Alek</p>
+                        <p class="local">New York - USA</p>
+                        <a href="#" class="btn-card">Ganhou R$ 100</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt="">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente02.png" alt="" class="foto-perfil2">
+                        <p class="nome-remetente">Luiz</p>
+                        <p class="local">Brazil - BR</p>
+                        <a href="#" class="btn-card">Economizou R$ 150</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/PS5.png" alt="">
+                <div class="info-cliente">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente01.png" alt="" class="foto-perfil">
+                        <p class="nome-remetente">Alek</p>
+                        <p class="local">New York - USA</p>
+                        <a href="#" class="btn-card">Ganhou R$ 100</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt="">
+                    <div class="remetente">
+                        <img src="img/clientes/cliente02.png" alt="" class="foto-perfil2">
+                        <p class="nome-remetente">Luiz</p>
+                        <p class="local">Brazil - BR</p>
+                        <a href="#" class="btn-card">Economizou R$ 150</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION - COMO FUNCIONA  -->
+    <section id="comoFunciona">
+        <div class="textoCabecalho">
+            <h2>Veja como funciona</h2>
+
+            <div class="botoes">
+                <p href="#" id="compradoresBtn">Para Compradores</p>
+                <span id="separador"></span>
+                <p href="#" id="viajantesBtn">Para Viajantes</p>
+            </div>
+
+        </div>
+
+        <!-- COMPRADORES -->
+        <div id="compradores" class="parent">
+
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>01</h1>
+                    <h3>Crie seu pedido</h3>
+                </div>
+                <p>É possível comprar qualquer produto no mundo. Comece fazendo um pedido para o item
+                    desejado, fornecendo informações essenciais como o local de compra sugerido para o viajante e o
+                    preço do produto.</p>
+            </div>
+
+            <div class="img">
+                <img src="img/layout/criando02.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/viajante.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>02</h1>
+                    <h3>Agora so esperar um viajante aceitar seu pedido</h3>
+                </div>
+                <p>Depois de soltar o seu pedido, a gente espalha para a galera de viajantes. Daí, os que estão indo
+                    para sua área mandam propostas para entregar seu produto</p>
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>03</h1>
+                    <h3>Entre em contato com o viajante</h3>
+                </div>
+                <p>A gente vai dá uma geral e calcular todos os impostos e taxas , incluindo a
+                    grana extra que você topa desembolsar pro viajante que tá levando seu produto. Se por acaso o
+                    viajante der bolo no seu pedido, relaxa, que a gente devolve o valor completo na conta.</p>
+            </div>
+
+            <div class="img">
+                <img src="img/layout/contato.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/encontro.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>04</h1>
+                    <h3>Encontre o viajante com o seu pedido</h3>
+                </div>
+                <p>Marque o horário em um local público para encontrar o viajante. Quando você receber o item, confirme
+                    a entrega para que o pagamento dele seja enviado</p>
+            </div>
+        </div>
+
+        <!-- VIAJANTES -->
+
+        <div id="viajantes" class="parent">
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>01</h1>
+                    <h3>Escolha algum pedido para entregar</h3>
+                </div>
+                <p>Pesquise pedidos com base no seu próximo destino. Faça uma oferta e defina sua recompensa de viajante
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="img/layout/comprador.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/confirmar.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>02</h1>
+                    <h3>Confirme todos os detalhes</h3>
+                </div>
+                <p>Use o chat para confirmar os detalhes do pedido com o seu comprador, como o tamanho e a cor do
+                    produto. Você também pode perguntar se ele tem outros pedidos que gostaria de receber.</p>
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>03</h1>
+                    <h3>Compre o produto</h3>
+                </div>
+                <p>Dessa forma, você sabe exatamente o que está trazendo. Após a entrega, você será reembolsado pelo
+                    preço do item junto com o pagamento da sua recompensa
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="img/layout/comprando02.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/entrega02.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>04</h1>
+                    <h3>Encontre o comprador com o seu pedido</h3>
+                </div>
+                <p>Marque o horário em um local público para encontrar o viajante. Quando você receber o item, confirme
+                    a entrega para que o pagamento dele seja enviado</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="quemSomos">
+        <div class="texto">
+            <h1>Quem somos nós?</h1>
+            <p>Zippy Conectando Desejos ao Redor do Mundo, um Pedido de Cada Vez!</p>
+        </div>
+
+        <div class="cardsSomos">
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/foguete.png" alt="">
+                <h1>Titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ducimus expedita voluptatum ullam
+                    maiores nisi qui blanditiis laborum dolorem itaque ipsa quisquam, consectetur minima facilis odio
+                    commodi? Quibusdam, voluptatem.</p>
+                <span id="linha"></span>
+            </div>
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/lampada.png" alt="">
+                <h1>Titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ducimus expedita voluptatum ullam
+                    maiores nisi qui blanditiis laborum dolorem itaque ipsa quisquam, consectetur minima facilis odio
+                    commodi? Quibusdam, voluptatem.</p>
+                <span id="linha"></span>
+            </div>
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/Group.png" alt="">
+                <h1>Titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ducimus expedita voluptatum ullam
+                    maiores nisi qui blanditiis laborum dolorem itaque ipsa quisquam, consectetur minima facilis odio
+                    commodi? Quibusdam, voluptatem.</p>
+                <span id="linha"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION - FAQ  -->
+    <section id="FAQ">
+        <div class="texto">
+            <h1>Perguntas Frequentes</h1>
+            <p>Tem um duvida? veja se ela ja não foi respondida pela nossa equipe</p>
+        </div>
+
+        <div id="perguntas">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt quia blanditiis esse sit est,
+                    ipsum incidunt dicta non quibusdam, molestias molestiae id accusamus reprehenderit natus fugit.
+                    Iusto, aut consequuntur?</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas expedita error placeat autem possimus
+                    consectetur, reprehenderit soluta maiores numquam! Est, rem reprehenderit praesentium quis rerum
+                    inventore animi! Distinctio, sapiente deleniti.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt quia blanditiis esse sit est,
+                    ipsum incidunt dicta non quibusdam, molestias molestiae id accusamus reprehenderit natus fugit.
+                    Iusto, aut consequuntur?</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas expedita error placeat autem possimus
+                    consectetur, reprehenderit soluta maiores numquam! Est, rem reprehenderit praesentium quis rerum
+                    inventore animi! Distinctio, sapiente deleniti.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="midia">
+        <div class="texto">
+            <h1>O que a midia fala desse serviço? Veja</h1>
+
+        </div>
+        <div class="container2">
+            <div class="grid">
+                <div class="item"><a target="_blank"
+                        href="https://consumidormoderno.com.br/2023/04/26/viajar-compras-grabr/" id="btn-ver">Ver
+                        Mais</a></div>
+                <div class="item"><a target="_blank"
+                        href="https://www.uol.com.br/tilt/noticias/redacao/2022/09/27/vantagens-riscos-importacao-iphone-do-exterior.htm"
+                        id="btn-ver">Ver Mais</a></div>
+                <div class="item"><a target="_blank"
+                        href="https://www.estadao.com.br/economia/econoweek/grabr-um-app-que-deixa-mais-barato-os-seus-importados/"
+                        id="btn-ver">Ver Mais</a></div>
+                <div class="item"><a target="_blank"
+                        href="https://www.infomoney.com.br/consumo/isencao-para-as-compras-de-ate-us-50-deve-acabar-em-2024-entenda/#:~:text=O%20governo%20e%20a%20Receita,produtos%20importados%20sem%20pagar%20imposto."
+                        id="btn-ver">Ver Mais</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="img/logoZippy.png" alt="">
+                <p>Zippy</p>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <div class="social-icons">
+                    <!-- Substitua os links pelos seus próprios links de redes sociais -->
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Compras Conosco</a></li>
+        </ul>
+        <hr>
+        <div class="developer-info">
+            <div class="termos">
+                <a href="#">Termos de Uso</a>
+                <span>|</span>
+                <a href="#">Privacidade</a>
+              </div>
+           <p> Desenvolvido por Zippy | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/acordion.js"></script>
+    <script src="js/switchDivs.js"></script>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>
