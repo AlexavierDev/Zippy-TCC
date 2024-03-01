@@ -19,10 +19,10 @@
 
 /* HEADER - NAV - LOGO */
 header {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center !important;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -50,6 +50,7 @@ header .logo p {
 
 header nav ul {
     display: flex;
+    align-items: center ;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -86,6 +87,8 @@ header .btn-hamburguer .line {
 
 
 /* CONTAINER PRINCIPAL - TEXTO, BOTAO E IMAGENS */
+
+
 
 div.container {
     display: flex;

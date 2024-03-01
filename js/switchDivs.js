@@ -14,8 +14,8 @@ document.getElementById('viajantesBtn').addEventListener('click', function (e) {
     
     compradoresContainers.style.display = 'none';
     viajantesContainers.style.display = 'grid';
-    
-
 
         
 });
+
+

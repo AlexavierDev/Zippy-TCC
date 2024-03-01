@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../../img/logoZippy.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Faça Login | Zippy</title>
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container-login">
+
+        <!-- FORMULARIO PARA LOGIN   -->
+        <div id="formLogin" style="display: block;">
+            <form class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action=""
+                method="post">
+                <img class="mb-4 img-responsive mx-auto" src="../../img/logoZippy.png" alt="logoZippy">
+                <h4 class="mb-3 font-weight-normal text-light">Zippy | Faça Login</h4>
+
+                <div class="form-group">
+                    <label for="loginEmail" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="loginEmail" name="loginEmail"
+                        placeholder="email@cadastrado.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="loginSenha" class="sr-only">Senha</label>
+                    <input type="password" class="form-control" id="loginSenha" name="loginSenha"
+                        placeholder="**********">
+                </div>
+
+
+                <a id="btnEsqueciSenha" href="javascript:void(0)">
+                    <p class="text-left text-light">Esqueceu sua senha?</p>
+                </a>
+
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit" name="btn-login">Login &rarr;</button>
+
+                <a id="btnCadastro" href="javascript:void(0)">
+                    <p class="text-left text-light mt-3">Não tem uma conta? Crie uma aqui</p>
+                </a>
+            </form>
+        </div>
+
+
+        <!-- FORMULARIO PARA RECUPERAR SENHA  -->
+        <div id="formRecupera" style="display: none;">
+
+            <form id="formRecupera"
+                class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action=""
+                method="post">
+                <img class="mb-4 img-responsive mx-auto" src="../../img/logoZippy.png" alt="">
+                <h4 class="mb-3 font-weight-normal text-light">Digite o email cadastrado </h4>
+
+                <div class="form-group">
+                    <label for="emailCadastrado" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="emailCadastrado" name="emailCadastrado"
+                        placeholder="email@cadastrado.com">
+                </div>
+
+                <a id="btnVoltarLogin" href="javascript:void(0)">
+                    <p class="text-left text-light">Ja tem conta? Faça login</p>
+                </a>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="btn-recupera">Recuperar
+                    &rarr;</button>
+
+            </form>
+        </div>
+
+        <!-- FORMULARIO PARA CADASTRO -->
+        <div id="formCadastro" class="text-light text-center" style="display: none;">
+            <form>
+                <img class="mb-4 img-responsive mx-auto" src="../../img/logoZippy.png" alt="">
+                <h3>Cadastre suas informaçoes</h3>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                    </div>
+
+                </div>
+
+                <div class="row mb-2 text-left">
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="row mt-2 mb-2 text-left">
+                    <div class="col">
+                        <label for="tel">Telefone</label>
+                        <input id="tel" name="tel" type="tel" class="form-control" placeholder="Telefone">
+                    </div>
+                </div>
+
+                <div class="row mt-2 mb-2 text-left">
+                    <div class="col">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" name="cpf" type="text" class="form-control" placeholder="CPF">
+                    </div>
+                </div>
+
+                <div class="form-row text-left">
+                    <div class="form-group col-md-6 ">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="confSenha">Confirme a senha</label>
+                        <input type="password" class="form-control" id="confSenha" name="confSenha"
+                            placeholder="Confirme senha">
+                        <small id="senhaError" class="text-danger" style="display:none;">As senhas não
+                            coincidem.</small>
+                    </div>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="btn-cadastrar">Cadastrar</button>
+
+                <a id="btnLogin" href="javascript:void(0)">
+                    <p class="text-left text-light mt-3 text-center">Ja tem conta? Faça login</p>
+                </a>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="../../js/switchForm.js"></script>
+    <script src="../../js/validInputs.js"></script>
+
+</body>
+
+</html>
