@@ -118,7 +118,7 @@
     header.responsive {
         display: block;
         padding: 1rem;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     header nav ul.responsive {

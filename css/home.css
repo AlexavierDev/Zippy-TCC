@@ -1,0 +1,29 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 80%;
+
+    text-align: center;
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+a#btn-criar {
+    display: block;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background: #8C76DB;
+    color: #fff;
+    text-decoration: none;
+}
