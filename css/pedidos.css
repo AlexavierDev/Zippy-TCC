@@ -1,0 +1,41 @@
+.container-pedido-disponiveis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 0 1rem;
+}
+
+.card-pedido {
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    background: #F9F9F9;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.card-pedido img{
+    width: 35%;
+    border-radius: 5px;
+}
+
+.info-pedido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 1;
+    text-align: right;
+}
+
+

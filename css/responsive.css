@@ -75,9 +75,24 @@
 
     /* PAGINA DE LOGIN */
 
-    div.container-login{
+    div.container-login {
         width: 100%;
     }
+
+    
+
+     /* HOME - CRIAR PEDIDOS */
+
+     div.container-pedido{
+       flex-direction: column;
+       width: 90%;
+       margin: 0 auto;
+     }
+
+     div.container-pedido img{
+       display: none;
+    }
+ 
 
 
 
@@ -86,6 +101,8 @@
 /* MOBILE MEDIO */
 
 @media (max-width: 426px) {
+
+
 
     header {
         padding: 1rem;
@@ -210,9 +227,10 @@
         gap: 2rem;
     }
 
-    .logo{
+    .logo {
         flex-direction: column;
     }
+
     .logo p {
         font-size: 25px;
     }
@@ -226,10 +244,39 @@
         align-items: center;
     }
 
-    .developer-info{
+    .developer-info {
         gap: 1rem;
         justify-content: center;
         text-align: center;
-     }
+    }
 
+
+      /* HOME - PEDIDOS DISPONIVEIS */
+
+      div.entregas-disponiveis  {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    div.entregas-disponiveis div.texto h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    div.entregas-disponiveis img{
+        display: none;
+    }
+
+    .container-pedido-disponiveis{
+       flex-direction: column;
+    }
+
+    .card-pedido{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+   
 }

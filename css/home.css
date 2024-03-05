@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
     padding: 1rem 0;
     margin: 0 auto;
@@ -20,10 +20,41 @@
 
 
 a#btn-criar {
-    display: block;
+    display:inline-block    ;
     padding: 20px 30px;
     border-radius: 5px;
     background: #8C76DB;
     color: #fff;
     text-decoration: none;
+}
+
+div.entregas-disponiveis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    margin-top: 5rem;
+    text-align: left;
+    
+}
+
+div.entregas-disponiveis img{
+    width: 50%;
+}
+
+
+/* FORM PARA CRIAÇÃO DE PEDIDOS  */
+
+div.container-pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+    text-align: center;
+}
+
+div.container-pedido img{
+    width: 30%;
 }
