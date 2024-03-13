@@ -1,0 +1,9 @@
+div.container-perfil{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    height: 100vh;
+    margin: 5rem 0 auto;
+}
