@@ -16,3 +16,4 @@ function validarSenha() {
         document.getElementById('confSenha').value = "";
     }
 }
+

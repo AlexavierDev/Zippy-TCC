@@ -1,41 +1,78 @@
+
+.container-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.meusPedidos {
+    text-align: left;
+}
+
+ul.lista-pedidos {
+    list-style-type: none;
+}
+
+li.pedido {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #F9F9F9;
+}
+
+.pedido img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+
+
+div.container-pedido img{
+    width: 30%;
+}
+
 .container-pedido-disponiveis{
     display: flex;
-    align-items: center;
+    gap: 1rem;
     justify-content: center;
-    gap: 1rem;
-
-    padding: 0 1rem;
+    
 }
 
-.card-pedido {
-    display: flex;
-    gap: 1rem;
-    width: 50%;
-    background: #F9F9F9;
-    margin: 0 auto;
-    padding: 1rem;
+.img-medium {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+
+}
+
+div.card{
+    align-items: center;
+    flex-direction: row;
+}
+
+
+#btn-top{
+    background-color: #8C76DB;
+    border: none;
+    outline: none;
+    width: 45px;
+    margin: 20px 20px;
+    float: right;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
     border-radius: 5px;
-
 }
 
-.card-pedido img{
-    width: 35%;
-    border-radius: 5px;
-}
 
-.info-pedido {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
-.left-column {
-    flex: 1;
-}
 
-.right-column {
-    flex: 1;
-    text-align: right;
-}
 
 

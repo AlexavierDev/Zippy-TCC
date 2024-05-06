@@ -44,17 +44,3 @@ div.entregas-disponiveis img{
 }
 
 
-/* FORM PARA CRIAÇÃO DE PEDIDOS  */
-
-div.container-pedido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    height: 100vh;
-    text-align: center;
-}
-
-div.container-pedido img{
-    width: 30%;
-}
