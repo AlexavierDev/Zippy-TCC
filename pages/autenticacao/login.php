@@ -2,7 +2,7 @@
 session_start();
 //Url base para os caminhos relativos, altere a porta caso for diferente
 global $baseUrl;
-$baseUrl = "http://localhost/zippyLocal";
+$baseUrl = 'http://localhost/zippyLocal';
 
 ?>
 <!DOCTYPE html>
@@ -48,6 +48,7 @@ $baseUrl = "http://localhost/zippyLocal";
                     case 'Senha incorreta':
                     case 'Email não cadastrado':
                     case 'Erro ao logar':
+                    case 'Erro ao cadastrar':
                         include_once '../../includes/mensagens.php';
                         break;
                 }
@@ -61,7 +62,7 @@ $baseUrl = "http://localhost/zippyLocal";
             <div id="formLogin" style="display: block;">
 
                 <!--INÍCIO DO FORMULÁRIO-->
-                <form class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action="<?= $baseUrl ?>/actions/login.php" method="post">
+                <form class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action="<?= $baseUrl?>/actions/login.php" method="post">
                     <img class="mb-4 img-responsive mx-auto" src="../../img/logoZippy.png" alt="logoZippy">
                     <h4 class="mb-3 font-weight-normal text-light">Zippy | Faça Login</h4> <!--MINI CABEÇALHO-->
 
@@ -100,7 +101,7 @@ $baseUrl = "http://localhost/zippyLocal";
             <!--INÍCIO DO FORMULÁRIO PARA RECUPERAR SENHA-->
             <div id="formRecupera" style="display: none;">
 
-                <form id="formRecupera" class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action="" method="post">
+                <form id="formRecupera" class="form-signin text-center container-fluid d-flex flex-column justify-content-center" action="../../actions/recuperar_senha.php" method="post">
                     <img class="mb-4 img-responsive mx-auto" src="../../img/logoZippy.png" alt="">
                     <h4 class="mb-3 font-weight-normal text-light">Digite o email cadastrado</h4>
 
@@ -133,7 +134,7 @@ $baseUrl = "http://localhost/zippyLocal";
                 </div>
 
 
-                <form id="formCadastro" action="<?= $baseUrl ?>/actions/cadastro.php" method="post">
+                <form id="formCadastro" action="<?= $baseUrl ?>../actions/cadastro.php" method="post">
 
                     <div class="form-row text-left">
 

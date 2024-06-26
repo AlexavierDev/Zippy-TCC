@@ -97,9 +97,16 @@
         margin: 0 auto;
     }
 
-    div.container-pedido img {
-        display: none;
+    div.container-pedido .img-pedidos {
+       display: none;
     }
+
+    li.pedido{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
     
     div#criarPedido{
         flex-direction: column;
@@ -293,12 +300,19 @@
     }
 
     .container-pedido-disponiveis {
+        margin-top: 2rem;
         flex-direction: column;
+        text-align: center;
     }
 
     .card-pedido {
         flex-direction: column;
         width: 100%;
+    }
+
+    div.card{
+        flex-direction: column;
+        align-items: center;
     }
 
     /* FINAL HOME PEDIDOS DISPONÍVEIS */

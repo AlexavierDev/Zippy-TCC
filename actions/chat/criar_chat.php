@@ -5,6 +5,7 @@ require_once '../conexao_bd.php';
 if (isset($_POST['btn-chat'])) {
     $remetente = $_POST['remetente'];
     $destinatario = $_POST['destinatario'];
+    $id_postagem = $_POST['id_pedido'];
 
     // Verifica se o chat já existe
     $sql_verificar = "SELECT COUNT(*) FROM tb_chats WHERE REMETENTE = :remetente AND DESTINATARIO = :destinatario";
@@ -35,12 +36,13 @@ if (isset($_POST['btn-chat'])) {
     $nome_destinatario = $stmt_dados_destinatario->fetchColumn();
 
     // Insere os dados na tabela de chats
-    $sql = "INSERT INTO tb_chats (REMETENTE,DESTINATARIO,DTA_CRIACAO,NOME_REMETENTE, NOME_DESTINATARIO) VALUES (:remetente, :destinatario, NOW(), :nome_remetente, :nome_destinatario )";
+    $sql = "INSERT INTO tb_chats (REMETENTE,DESTINATARIO,DTA_CRIACAO,NOME_REMETENTE, NOME_DESTINATARIO,ID_PEDIDO) VALUES (:remetente, :destinatario, NOW(), :nome_remetente, :nome_destinatario, :id_postagem)";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':remetente', $remetente);
     $stmt->bindParam(':destinatario', $destinatario);
     $stmt->bindParam(':nome_remetente', $nome_remetente);
     $stmt->bindParam(':nome_destinatario', $nome_destinatario);
+    $stmt->bindParam(':id_postagem', $id_postagem);
     $stmt->execute();
 
     if ($stmt->rowCount() > 0) {

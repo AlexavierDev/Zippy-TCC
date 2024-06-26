@@ -4,12 +4,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 1rem;
     max-width: 90%;
     margin: 0 auto;
-    text-align: center;
+}
+
+.img-pedidos{
+   width: 40%;
 }
 
 div.meusPedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     text-align: left;
 }
 
@@ -19,26 +27,40 @@ ul.lista-pedidos {
 
 li.pedido {
     display: flex;
+    align-self: center;
+    justify-content: space-between;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     margin-bottom: 1rem;
-    background: #F9F9F9;
+    background: #fff;
+    width: 100%;
 }
 
-.pedido img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 1rem;
+li.pedido img {
+    width: 150px;
+    height: 150px;
+}
+
+span#linha{
+    width: 1px;
+    height: 60%;
+    background-color: #ccc;
+    margin: 0 1rem;
+
 }
 
 
 
-div.container-pedido img{
-    width: 30%;
-}
+
+
+
+
 
 .container-pedido-disponiveis{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     
@@ -69,6 +91,12 @@ div.card{
     padding: 15px;
     font-size: 18px;
     border-radius: 5px;
+}
+
+#origem-autocomplete, #destino-autocomplete {
+    max-height: 100px;
+    width: 100%;
+    overflow: auto;
 }
 
 

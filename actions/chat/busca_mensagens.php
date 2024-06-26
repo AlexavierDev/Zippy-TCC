@@ -7,18 +7,18 @@ if (isset($_GET['chat_id'])) {
     // Obtém o valor do parâmetro chat_id
     $chat_id = $_GET['chat_id'];
 
-    // Consulta SQL para buscar as mensagens do chat
+    // Consulta SQL para buscar as mensagens do chat com o ID fornecido
     $sql = "SELECT * FROM tb_mensagens WHERE CHAT_ID = :chat_id ORDER BY DTA_ENVIO";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(":chat_id", $chat_id);
     $stmt->execute();
 
-    // Array para armazenar as mensagens
+    // crio um array para armazenar as mensagens
     $mensagens = array();
 
     // Loop através das linhas de resultado
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        // Adiciona a mensagem ao array de mensagens
+        // Adiciona mensagens,remetente,destinatario e data de envio ao array de mensagens
         $mensagens[] = $row;
     }
 

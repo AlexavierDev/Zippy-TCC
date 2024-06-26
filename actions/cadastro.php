@@ -42,7 +42,8 @@ if (isset($_POST['btn-cadastrar'])) {
 
         header('Location: ../pages/autenticacao/login.php?sucesso=Cadastrado com sucesso');
     } catch (PDOException $e) {
-        header('Location: ../pages/autenticacao/cadastro.php?erro=Erro ao cadastrar');
         echo 'Error: ' . $e->getMessage();
+      
+       
     }
 }

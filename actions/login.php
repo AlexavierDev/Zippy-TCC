@@ -55,6 +55,7 @@ if (isset($_POST['btn-login'])) {
                 $_SESSION['sobrenome'] = $cliente['SOBRENOME_CLIENTE'];
                 $_SESSION['fone'] = $cliente['FONE_CLIENTE'];
                 $_SESSION['identidade'] = $cliente['IDENTIDADE_CLIENTE'];
+                $_SESSION['saldo'] = $cliente['SALDO'] ?? 0;
 
                 //informações do endereço
                 $_SESSION['rua'] = $edereco['RUA_ENDERECO'] ?? '';

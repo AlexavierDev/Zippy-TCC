@@ -18,6 +18,8 @@ if (isset($_GET['sucesso']) || isset($_GET['erro'])) {
         <img src="../uploads/<?= isset($_SESSION['foto_perfil']) ? $_SESSION['foto_perfil'] : 'default.jpg'; ?>" alt="..." class="img-thumbnail" width="100%">
         <h4><?= $_SESSION['nome'] . ' ' . $_SESSION['sobrenome']  ?> </h4>
 
+        <p style="font-size: 1.5rem;"><i style="font-size: 2rem; color:#8C76DB" class="fa-solid fa-wallet"></i>R$ <span id="saldo"></span></p>
+        <span id="idUsuario" style="display: none;"><?= $_SESSION['id_usuario'] ?></span>
         <form action="../actions/update_foto.php" method="post" enctype="multipart/form-data">
             <label for="btn-update-foto">Atualizar foto de perfil</label> <br>
             <label class="custom-file-upload">
@@ -26,6 +28,8 @@ if (isset($_GET['sucesso']) || isset($_GET['erro'])) {
             </label><br>
             <input class="btn-primary p-2 rounded" name="btn-update-foto" type="submit" value="Enviar">
         </form>
+
+
     </div>
 
 
@@ -147,11 +151,12 @@ if (isset($_GET['sucesso']) || isset($_GET['erro'])) {
 <script src="<?= $baseUrl ?>/js/validInputs.js"></script>
 <script src="<?= $baseUrl ?>/js/apiCEP.js"></script>
 <script src="<?= $baseUrl ?>/js/disableInputs.js"></script>
+<script src="<?= $baseUrl ?>/js/updateSaldo"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

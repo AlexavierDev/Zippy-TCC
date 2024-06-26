@@ -4,7 +4,8 @@ session_start();
 
 //Url base para os caminhos relativos, altere a porta caso for diferente
 global $baseUrl;
-$baseUrl = "http://localhost/zippyLocal";
+
+$baseUrl = 'http://localhost/zippyLocal';
 ?>
 
 <!DOCTYPE html>
@@ -25,18 +26,21 @@ $baseUrl = "http://localhost/zippyLocal";
     <link rel="stylesheet" href="<?= $baseUrl ?>/css/perfil.css">
     <link rel="stylesheet" href="<?= $baseUrl ?>/css/pedidos.css">
     <link rel="stylesheet" href="<?= $baseUrl ?>/css/responsive.css">
+    <link rel="stylesheet" href="<?= $baseUrl ?>/css/checkout.css">
+    <link rel="stylesheet" href="<?= $baseUrl ?>/css/confEntrega.css">
 
 
     <!-- CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
     <title>Home | Zippy</title>
 </head>
 
-<body>
+<body style="background-color: #FAFAFA;">
     <!-- HEADER -->
     <header id="header" class="">
         <div id="logo" class="logo">
@@ -52,9 +56,10 @@ $baseUrl = "http://localhost/zippyLocal";
                 <li>
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
-                            <i class="fa-solid fa-user"></i> <?= $_SESSION['nome'] ?><span style="display: none;" id="idUsuario"><?=$_SESSION['id_usuario']?></span>
+                            <i class="fa-solid fa-user"></i> <?= $_SESSION['nome'] ?? '' ?><span style="display: none;" id="idUsuario"><?= $_SESSION['id_usuario']     ?></span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="<?= $baseUrl ?>/pages/confEntrega.php">Confirmar entrega</a>
                             <a class="dropdown-item" href="<?= $baseUrl ?>/pages/meusPedidos.php">Meus pedidos</a>
                             <a class="dropdown-item" href="<?= $baseUrl ?>/pages/perfil.php">Editar Perfil</a>
                             <a class="dropdown-item" href="<?= $baseUrl ?>/pages/chats.php">Chats</a>

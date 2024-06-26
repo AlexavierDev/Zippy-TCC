@@ -1,6 +1,6 @@
 <?php
 
-$host = 'loacalhost'; 
+$host = 'localhost'; 
 $dbname = 'zippybd'; 
 $username = 'root'; 
 $password = '';
