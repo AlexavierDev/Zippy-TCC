@@ -1,4 +1,4 @@
-# Zippy ![logo](img\logoZippy.png)
+# Zippy ![logo](img/logoZippy.png)
 
 ![Tela inicial da Zippy](screenshots/index.png)
 
