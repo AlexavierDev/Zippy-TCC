@@ -1,6 +1,8 @@
-# Zippy ![logo](img/logoZippy.png)
+<div style="text-align: center;">
+  ![Zippy](img/logoZippy.png)
+  <p>Zippy</p>
+</div>
 
-![Tela inicial da Zippy](screenshots/index.png)
 
 **Zippy** é uma plataforma que conecta compradores e viajantes em todo o mundo, facilitando a obtenção dos melhores preços e prazos de entrega para produtos desejados. Através do Zippy, compradores podem encontrar ofertas vantajosas e viajantes podem gerar renda extra transportando esses produtos durante seus trajetos de viagem.
 
