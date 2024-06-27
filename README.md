@@ -1,4 +1,4 @@
-# Zippy
+# Zippy ![logo](img\logoZippy.png)
 
 ![Tela inicial da Zippy](screenshots/index.png)
 
@@ -109,8 +109,8 @@ O Zippy oferece um painel administrativo completo para gerenciamento avançado d
 
 
 ### Autores
-Author 2 Name ([Author 2 GitHub username](https://github.com/AlexavierDev)) 
-Esdras Queiroz ([Esdras Queiroz](https://github.com/))
+([Alexsandro Xavier](https://github.com/AlexavierDev)) 
+([Esdras Queiroz](https://github.com/))
 
 
 ### Licença
