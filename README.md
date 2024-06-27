@@ -53,6 +53,8 @@ Para executar o projeto localmente:
 
 O Zippy oferece diversas funcionalidades para compradores e viajantes:
 
+![Tela de criação de pedidos](screenshots/criar-pedido.png)
+
 **Compradores:**
 
 * **Criar pedidos de produtos desejados:** Encontre o produto que você procura e faça um pedido, especificando quantidade, localização e orçamento.
@@ -60,17 +62,21 @@ O Zippy oferece diversas funcionalidades para compradores e viajantes:
 * **Iniciar conversas entre viajantes e compradores:** Negocie o transporte do produto com o viajante, definindo detalhes como preço, prazo de entrega e local de entrega.
 * **Recuperar senha e receber notificações por e-mail:** Mantenha sua conta segura e atualizada com notificações sobre o status dos seus pedidos.
 
+
 **Viajantes:**
+
+![Tela de busca de pedidos disponiveis ](screenshots/pesquisar-pedidos.png)
 
 * **Listar pedidos disponíveis dentro dos seus trajetos de viagem:** Encontre pedidos que se encaixam no seu trajeto de viagem e ofereça seus serviços de transporte.
 * **Iniciar conversas entre viajantes e compradores:** Negocie o transporte do produto com o comprador, definindo detalhes como preço, prazo de entrega e local de entrega.
 * **Ganhar renda extra:** Transporte produtos durante suas viagens e receba pagamentos por seus serviços.
 
-## Painel Administrativo e Dashboard de Transações
+
+![Tela de um chat ](screenshots/chat.png)
+
+# Painel Administrativo e Dashboard de Transações
 
 ![Tela inicial do painel administrativo do Zippy](screenshots/denunciados.png)
-
-**Legenda:** Esta imagem mostra a tela inicial do painel administrativo do Zippy, onde os administradores podem visualizar e gerenciar diversos aspectos da plataforma.
 
 O Zippy oferece um painel administrativo completo para gerenciamento avançado da plataforma, permitindo que administradores visualizem, gerenciem e analisem diversos aspectos da plataforma.
 
@@ -94,7 +100,7 @@ O Zippy oferece um painel administrativo completo para gerenciamento avançado d
 * O painel administrativo pode ser acessado através da URL: `[localhost/seu-diretorio/admin](http://localhost/seu-diretorio/admin)`
 * Utilize suas credenciais de administrador para fazer login.
 
-**Dashboard de Transações:**
+# Dashboard de Transações
 
 ![Tela de Dashboard](screenshots/dashboard.png)
 
@@ -102,9 +108,10 @@ O Zippy oferece um painel administrativo completo para gerenciamento avançado d
 * Os gráficos e estatísticas detalhadas permitem que administradores monitorem o desempenho da plataforma, identifiquem oportunidades de crescimento e tomem decisões informadas para otimizar as operações.
 
 
-### Autor
+### Autores
+Author 2 Name ([Author 2 GitHub username](https://github.com/AlexavierDev)) 
+Esdras Queiroz ([Esdras Queiroz](https://github.com/))
 
-Desenvolvido por Alexsandro.
 
 ### Licença
 
